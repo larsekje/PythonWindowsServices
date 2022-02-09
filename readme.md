@@ -3,7 +3,7 @@
 A proof-of-concept on how to run a python script as a windows service using [nssm](https://nssm.cc/download).
 
 NSSM (the Non-Sucking Service Manager) allows easy creation of windows services with a few simple commands:
-1. `nssm install "SERVICE_NAME" "PATH_TO_PYTHON.exe" "PATH_TO_PYTHON_SCRIPT.exe"`
+1. `nssm install "SERVICE_NAME" "PATH_TO_PYTHON.exe" "PATH_TO_PYTHON_SCRIPT.py"`
 2. Configure logging (optional)
    1. `nssm set SERVICE_NAME Appstdout "PATH_TO_STDOUT.log"` (file must exist)
    2. `nssm set SERVICE_NAME Appstderr "PATH_TO_STDERR.log"` (file must exist)
